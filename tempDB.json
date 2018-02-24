@@ -1,0 +1,47 @@
+languages = [
+	{
+		"name": "HTML5",
+		"color": "teal",
+		"url": "img/html-logo.png"
+	},
+	{
+		"name": "CSS3",
+		"color": "grey",
+		"url": "img/css-logo.png"
+	},
+	{
+		"name": "Javascript",
+		"color": "orange",
+		"url": "img/javascript-logo.png"
+	},
+	{
+		"name": "NodeJS",
+		"color": "red",
+		"url": "img/node-logo.png"
+	},
+	{
+		"name": "Python",
+		"color": "red",
+		"url": "img/python-logo.png"
+	},
+	{
+		"name": "MongoDB",
+		"color": "pink",
+		"url": "img/mongo-logo.png"
+	},
+	{
+		"name": "Vim",
+		"color": "purple",
+		"url": "img/vim-logo.png"
+	},
+	{
+		"name": "Terminal",
+		"color": "pink",
+		"url": "img/terminal-logo.png"
+	},
+	{
+		"name": "Markdown",
+		"color": "blue",
+		"url": "img/markdown-logo.png"
+	}
+];
