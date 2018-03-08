@@ -77,7 +77,9 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: none
+	opacity: 0;
+	font-size: 0;
+	transition: font-size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .lang-box img{
@@ -93,7 +95,8 @@ body{
 }
 
 .lang-box:hover h1{
-	display: inline-block;
+	opacity: 1;
+	font-size: 2em;
 }
 
 /* MATERIAL COLORS */
