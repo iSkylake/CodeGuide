@@ -6,16 +6,19 @@ let searchLangInput = document.getElementById("search-language-input");
 function displayAll(){
 	for(let i=0; i<languages.length; i++){
 		let langBox = document.createElement("div");
+		let langUrl = document.createElement("a");
 		let langImg = document.createElement("img");
 		let langName = document.createElement("h1");
 
 		langBox.classList.add("lang-box");
 		langBox.classList.add(languages[i].color);
 
-		langImg.setAttribute("src", languages[i].url);
+		langUrl.setAttribute("href", languages[i].url);
+		langImg.setAttribute("src", languages[i].img);
+		langUrl.appendChild(langImg);
 		langName.appendChild(document.createTextNode(languages[i].name));
 		langBox.appendChild(langName);
-		langBox.appendChild(langImg);
+		langBox.appendChild(langUrl);
 
 		container[0].appendChild(langBox);
 	}
