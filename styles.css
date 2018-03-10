@@ -24,6 +24,8 @@ body{
 
 #navbar div{
 	margin: 0 30px;
+	display: flex;
+	align-items: center;
 }
 
 #navbar div input{
@@ -35,7 +37,7 @@ body{
 	margin-right: 2px;
 }
 
-#navbar div i{
+.search-icon{
 	font-size: 20px;
 }
 
@@ -46,6 +48,23 @@ body{
 #navbar div form button i{
 	font-size: 23px;
 	background-color: #373737;
+}
+
+.back-icon{
+	font-size: 50px;
+	margin-right: 20px;
+	/*border-right: solid 2px #FFFFFF;*/
+	padding-right: 5px;
+	transition: transform .2s ease-in-out;
+}
+
+.back-icon:hover{
+	transform: scale(1.2);
+}
+
+.icon-title{
+	font-size: 30px;
+	margin-right: 10px;
 }
 
 /* CONTENT */
@@ -127,4 +146,37 @@ body{
 
 .grey{
 	background-color: #546E7A;
+}
+
+.script-container{
+	width: 80%;
+}
+
+.script-block{
+	width: 100%;
+	background-color: #2b2c2d;
+	margin-bottom: 30px;
+	box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.script-name{
+	background-color: #f27618;
+	padding: 3px 10px;
+}
+
+.scripts{
+	padding: 30px;
+	display: block;
+}
+
+.tag-name{
+	color: #ea0958;
+}
+
+.tag-var{
+	color: #7ce20f;
+}
+
+.tag-string{
+	color: #efef0a;
 }

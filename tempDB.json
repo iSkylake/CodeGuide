@@ -2,7 +2,7 @@ languages = [
 	{
 		"name": "HTML5",
 		"color": "teal",
-		"url": "img/html-logo.png"
+		"url": "img/html-logo.png",
 	},
 	{
 		"name": "CSS3",
