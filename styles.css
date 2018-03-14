@@ -148,6 +148,8 @@ body{
 	background-color: #546E7A;
 }
 
+/* LANGUAGE SCRIPTS */
+
 .script-container{
 	width: 80%;
 }
@@ -157,6 +159,7 @@ body{
 	background-color: #2b2c2d;
 	margin-bottom: 30px;
 	box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+	position: relative;
 }
 
 .script-name{
@@ -167,7 +170,24 @@ body{
 .scripts{
 	padding: 30px;
 	display: block;
+	/*position: relative;*/
 }
+
+.copy-icon{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	font-size: 25px;
+	transform: translate(-50%, -5%);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.script-block:hover .copy-icon{
+	opacity: 1;
+}
+
+/* HTML TAG HIGHLIGHTS */
 
 .tag-name{
 	color: #ea0958;
