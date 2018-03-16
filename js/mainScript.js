@@ -10,8 +10,7 @@ function displayAll(){
 		let langImg = document.createElement("img");
 		let langName = document.createElement("h1");
 
-		langBox.classList.add("lang-box");
-		langBox.classList.add(languages[i].color);
+		langBox.className = "lang-box " + languages[i].color;
 
 		langUrl.setAttribute("href", languages[i].url);
 		langImg.setAttribute("src", languages[i].img);

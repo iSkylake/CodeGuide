@@ -12,8 +12,8 @@ function displayHTML(){
 		let scripts = document.createElement("code");
 
 		// Add class to elements
-		scriptBlock.classList.add("script-block");
-		scriptName.classList.add("script-name");
+		scriptBlock.className = "script-block";
+		scriptName.className = "script-name";
 		scripts.className += "scripts html-script";
 
 		// Creating and appending script name
@@ -40,12 +40,12 @@ function displayHTML(){
 					let atrValue = arr[i].substring(equalIndex+1);
 					highlight = htmlHighlight(attribute);
 					span = document.createElement("span");
-					span.classList.add(highlight);
+					span.className = highlight;
 					span.appendChild(document.createTextNode(" " + attribute));
 					scripts.appendChild(span);
 
 					span = document.createElement("span");
-					span.classList.add("tag-string");
+					span.className = "tag-string";
 					span.appendChild(document.createTextNode("=" + atrValue));
 					scripts.appendChild(span);
 
@@ -62,7 +62,7 @@ function displayHTML(){
 				} else {
 					highlight = htmlHighlight(arr[i]);
 					span = document.createElement("span");
-					span.classList.add(highlight);
+					span.className = highlight;
 					span.appendChild(document.createTextNode(arr[i]));
 					scripts.appendChild(span);
 				}
