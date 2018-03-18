@@ -1,6 +1,6 @@
-let scriptContainer = document.getElementsByClassName("script-container");
+let scripts = document.getElementsByClassName("scripts");
 let copyIcon = document.getElementsByClassName("copy-icon");
-let htmlScript = document.getElementsByClassName("html-script");
+let scriptContainer = document.getElementsByClassName("script-container");
 
 function displayHTML(){
 	for(let i=0; i<html.length; i++){
@@ -14,7 +14,7 @@ function displayHTML(){
 		// Add class to elements
 		scriptBlock.className = "script-block";
 		scriptName.className = "script-name";
-		scripts.className += "scripts html-script";
+		scripts.className += "scripts script-container";
 
 		// Creating and appending script name
 		scriptNameH3.appendChild(document.createTextNode(html[i].name));
@@ -79,7 +79,11 @@ function displayHTML(){
 
 		// Create copy icon		
 		let newCopyIcon = document.createElement("i");
+		let tooltip = document.createElement("span");
+		tooltip.appendChild(document.createTextNode("Copy"));
 		newCopyIcon.className += "far fa-copy copy-icon";
+		tooltip.className = "tooltip";
+		newCopyIcon.appendChild(tooltip);
 		scriptBlock.appendChild(newCopyIcon);
 
 		// Append div block to main container
@@ -162,7 +166,7 @@ displayHTML();
 for(let i=0; i<copyIcon.length; i++){
 	copyIcon[i].addEventListener("click", function(){
 		var range = window.getSelection().getRangeAt(0);
-		range.selectNode(htmlScript[i]);
+		range.selectNode(scripts[i]);
 		window.getSelection(range);
 		document.execCommand("copy");
 		// window.getSelection().removeAllRanges();

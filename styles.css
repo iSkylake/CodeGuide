@@ -183,8 +183,48 @@ body{
 	transition: opacity 0.5s;
 }
 
+.copy-icon:hover{
+	color: #4dadf7;
+}
+
 .script-block:hover .copy-icon{
 	opacity: 1;
+}
+
+.tooltip{
+	opacity: 0;
+	width: 60px;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 17px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 135%;
+	left: 50%;
+	margin-left: -30px;
+	transform: translate(0, 10px);
+	transition: transform 0.5s 0.1s, opacity 0.3s 0.1s;
+}
+
+.tooltip::after{
+	content: " ";
+	position: absolute;
+	top: 100%; 
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.copy-icon:hover .tooltip{
+	opacity: 1;
+	transform: translate(0, 0);
+	transition: transform 0.2s 0.1s, opacity 0.5s, 0.1;
 }
 
 /* HTML TAG HIGHLIGHTS */
