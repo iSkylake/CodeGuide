@@ -163,8 +163,15 @@ body{
 }
 
 .script-name{
-	background-color: #f27618;
 	padding: 3px 10px;
+}
+
+.script-name-html{
+	background-color: #f27618;
+}
+
+.script-name-js{
+	background-color: #30d333;
 }
 
 .scripts{
@@ -230,13 +237,35 @@ body{
 /* HTML TAG HIGHLIGHTS */
 
 .tag-name{
-	color: #ea0958;
+	color: #ea0958; /* Special red */
 }
 
 .tag-atr{
-	color: #7ce20f;
+	color: #7ce20f; /* Lime green */
 }
 
 .tag-string{
+	color: #efef0a; /* Boring yellow */
+}
+
+/* JS HIGHLIGHTS */
+
+.js-reserved{
+	color: #29c7d8; /* Aquatic blue */
+}
+
+.js-symbols{
+	color: #ea0958;
+}
+
+.js-string{
 	color: #efef0a;
+}
+
+.js-params{
+	color: #f28057; /* Tasty orange */
+}
+
+.js-numbers{
+	color: #e173f4; /* Twitch purple */
 }

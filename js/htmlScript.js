@@ -13,7 +13,7 @@ function displayHTML(){
 
 		// Add class to elements
 		scriptBlock.className = "script-block";
-		scriptName.className = "script-name";
+		scriptName.className = "script-name script-name-html";
 		scripts.className += "scripts script-container";
 
 		// Creating and appending script name
