@@ -25,7 +25,6 @@ function displayHTML(){
 
 		// Loop through every line
 		for(let j=0; j<codeLine.length; j++){
-			let highlight = "";
 
 			// Split string into an array
 			let arr = stringSplit(codeLine[j]);
@@ -38,15 +37,15 @@ function displayHTML(){
 				if(equalIndex > -1){
 					let attribute = arr[i].substring(0, equalIndex);
 					let atrValue = arr[i].substring(equalIndex+1);
-					highlight = htmlHighlight(attribute);
 					span = document.createElement("span");
-					span.className = highlight;
+					span.className = htmlHighlight(attribute);
 					span.appendChild(document.createTextNode(" " + attribute));
 					scripts.appendChild(span);
 
 					span = document.createElement("span");
-					span.className = "tag-string";
-					span.appendChild(document.createTextNode("=" + atrValue));
+					span.className = htmlHighlight(atrValue);
+					scripts.appendChild(document.createTextNode("="));
+					span.appendChild(document.createTextNode(atrValue));
 					scripts.appendChild(span);
 
 				} else if (arr[i].length === 1){
@@ -60,9 +59,8 @@ function displayHTML(){
 					scripts.appendChild(document.createTextNode(blankSpace + "<"));
 
 				} else {
-					highlight = htmlHighlight(arr[i]);
 					span = document.createElement("span");
-					span.className = highlight;
+					span.className = htmlHighlight(arr[i]);
 					span.appendChild(document.createTextNode(arr[i]));
 					scripts.appendChild(span);
 				}
@@ -156,7 +154,7 @@ function htmlHighlight(str){
 		case "onsubmit":
 		case "placeholder": return "tag-atr";
 
-		default: return str;
+		default: return "tag-string";
 	}
 };
 
