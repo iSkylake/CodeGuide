@@ -269,3 +269,7 @@ body{
 .js-numbers{
 	color: #e173f4; /* Twitch purple */
 }
+
+.js-comment{
+	color: #4d564e; /*.Edgy grey */
+}

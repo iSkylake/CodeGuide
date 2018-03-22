@@ -81,3 +81,63 @@ html = [
 		"code": "<form onsubmit=\"myFunction()\">\n  <input type=\"text\" placeholder=\"Insert text\">\n  <button>Submit</button>\n</form>"
 	}
 ];
+
+javascript = [
+	{
+		"name": "ForEach",
+		"code": [
+			"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">1</span>, <span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>]; <br> <br> ",
+			"arr.<span class=\"js-reserved\">forEach</span>(<span class=\"js-reserved\">function</span>(<i><span class=\"js-params\">num</span></i>){ <br> ",
+			"&nbsp&nbsp<span class=\"js-reserved\">console</span>.<span class=\"js-reserved\">log</span>(num<span class=\"js-symbols\">+</span><span class=\"js-numbers\">2</span>); <br> });"
+		]
+	},
+	{
+		"name": "Array Slice",
+		"code": [
+			"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">1</span>, <span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>, <span class=\"js-numbers\">4</span>, <span class=\"js-numbers\">5</span>] <br> <br> ",
+			"arr.<span class=\"js-reserved\">slice</span>(<span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">4</span>) <span class=\"js-comment\">// [3, 4], second arg can be omitted</span>"
+		]
+	},
+	{
+		"name": "Add Class",
+		"code": ["element.<span class=\"js-reserved\">className</span> <span class=\"js-symbols\">+=</span> <span class=\"js-string\">\"class-name1 class-name2\"</span>;"]
+	},
+	{
+		"name": "Add Class Method",
+		"code": ["element.classList.<span class=\"js-reserved\">add</span>(<span class=\"js-string\">\"class-name\"</span>);"]
+	},
+	{
+		"name": "Set Attribute",
+		"code": ["imgElement.<span class=\"js-reserved\">setAttribute</span>(<span class=\"js-string\">\"href\"</span>, <span class=\"js-string\">\"randomURL\"</span>);"]
+	},
+	{
+		"name": "Add Event Listener",
+		"code": [
+			"element.<span class=\"js-reserved\">addEventListener</span>(<span class=\"js-string\">\"click\"</span>, <span class=\"js-reserved\">function</span>(){ <br> ",
+			"&nbsp&nbsp<span class=\"js-comment\">// Code block</span> <br> ",
+			"});"
+		]
+	},
+	{
+		"name": "Multiple AddEventListener",
+		"code": [
+			"<span class=\"js-symbols\">for</span>(<span class=\"js-reserved\">let</span> i<span class=\"js-symbols\">=</span><span class=\"js-numbers\">0</span>; i<span class=\"js-symbols\">&lt</span>elements.length; i<span class=\"js-symbols\">++</span>){ <br> ",
+			"&nbsp&nbspelements[i].<span class=\"js-reserved\">addEventListener</span>(<span class=\"js-string\">\"click\"</span>, <span class=\"js-reserved\">function</span>(){ <br> ",
+			"&nbsp&nbsp&nbsp&nbsp<span class=\"js-comment\">// Code block</span> <br> ",
+			"&nbsp&nbsp}); <br>",
+			"};"
+		]
+	},
+	{
+		"name": "Create Element",
+		"code": ["<span class=\"js-reserved\">let</span> divElement <span class=\"js-symbols\">=</span> <span class=\"js-reserved\">document</span>.<span class=\"js-reserved\">createElement</span>(<span class=\"js-string\">\"div\"</span>);"]
+	},
+	{
+		"name": "Create Text Node",
+		"code": ["<span class=\"js-reserved\">let</span> newStringNode <span class=\"js-symbols\">=</span> <span class=\"js-reserved\">document</span>.<span class=\"js-reserved\">createTextNode</span>(<span class=\"js-string\">\"string\"</span>);"]
+	},
+	{
+		"name": "Append Child Node",
+		"code": ["childElement.<span class=\"js-reserved\">appendChild</span>(parentElement);"]
+	}
+];
