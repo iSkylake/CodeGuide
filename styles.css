@@ -214,7 +214,7 @@ body{
 	left: 50%;
 	margin-left: -30px;
 	transform: translate(0, 10px);
-	transition: transform 0.5s 0.1s, opacity 0.3s 0.1s;
+	transition: transform 0.5s 0.07s, opacity 0.3s 0.07s;
 }
 
 .tooltip::after{
@@ -236,15 +236,15 @@ body{
 
 /* HTML TAG HIGHLIGHTS */
 
-.tag-name{
+.html-tag{
 	color: #ea0958; /* Special red */
 }
 
-.tag-atr{
+.html-atr{
 	color: #7ce20f; /* Lime green */
 }
 
-.tag-string{
+.html-string{
 	color: #efef0a; /* Boring yellow */
 }
 

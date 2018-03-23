@@ -58,27 +58,32 @@ languages = [
 html = [
 	{
 		"name": "Viewport",
-		"code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+		"code": ["<<span class=\"html-tag\">meta</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"viewport\"</span> <span class=\"html-atr\">content</span>=<span class=\"html-string\">\"width=device-width, initial-scale=1.0\"</span>>"]
 	},
 	{
 		"name": "Keywords",
-		"code": "<meta name=\"keywords\" content=\"HTML, CSS, Javascript\">",
+		"code": ["<<span class=\"html-tag\">meta</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"keywords\"</span> <span class=\"html-atr\">content</span>=<span class=\"html-string\">\"HTML, CSS, Javascript\"</span>>"],
 	},
 	{
 		"name": "Stylesheet",
-		"code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">",
+		"code": ["<<span class=\"html-tag\">link</span> <span class=\"html-atr\">rel</span>=<span class=\"html-string\">\"stylesheet\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/css\"</span> <span class=\"html-atr\">href</span>=<span class=\"html-string\">\"styles.css\"</span>>"],
 	},
 	{
 		"name": "Script",
-		"code": "<script type=\"text/javascript\" src=\"script.js\"></script>",
+		"code": ["<<span class=\"html-tag\">script</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/javascript\"</span> <span class=\"html-atr\">src</span>=<span class=\"html-string\">\"script.js\"</span>>&lt;/<span class=\"html-tag\">script</span>>"],
 	},
 	{
 		"name": "Input No Autocomplete",
-		"code": "<input autocomplete=\"off\" type=\"search\" name=\"language\">",
+		"code": ["<<span class=\"html-tag\">input</span> <span class=\"html-atr\">autocomplete</span>=<span class=\"html-string\">\"off\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"search\"</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"language\"</span>>"],
 	},
 	{
 		"name": "Form onsubmit",
-		"code": "<form onsubmit=\"myFunction()\">\n  <input type=\"text\" placeholder=\"Insert text\">\n  <button>Submit</button>\n</form>"
+		"code": [
+			"<<span class=\"html-tag\">form</span> <span class=\"html-atr\">onsubmit</span>=<span class=\"html-string\">\"myFunction()\"</span>> <br> ",
+			"&nbsp;&nbsp;<<span class=\"html-tag\">input</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text\"</span> <span class=\"html-atr\">placeholder</span>=<span class=\"html-string\">\"Insert text\"</span>> <br>", 
+			"&nbsp;&nbsp;<<span class=\"html-tag\">button</span>>Submit&lt;/<span class=\"html-tag\">button</span>> <br> ",
+			"&lt;/<span class=\"html-tag\">form</span>>"
+		]
 	}
 ];
 
@@ -94,8 +99,15 @@ javascript = [
 	{
 		"name": "Array Slice",
 		"code": [
-			"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">1</span>, <span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>, <span class=\"js-numbers\">4</span>, <span class=\"js-numbers\">5</span>] <br> <br> ",
-			"arr.<span class=\"js-reserved\">slice</span>(<span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">4</span>) <span class=\"js-comment\">// [3, 4], second arg can be omitted</span>"
+			"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">1</span>, <span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>, <span class=\"js-numbers\">4</span>, <span class=\"js-numbers\">5</span>]; <br> <br> ",
+			"arr.<span class=\"js-reserved\">slice</span>(<span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">4</span>); <span class=\"js-comment\">// [3, 4], second arg can be omitted</span>"
+		]
+	},
+	{
+		"name": "Index Of",
+		"code": [
+			"<span class=\"js-reserved\">let</span> str <span class=\"js-symbols\">=</span> <span class=\"js-string\">\"Hello World\"</span>; <br> <br> ",
+			"str.<span class=\"js-reserved\">indexOf</span>(<span class=\"js-string\">\"World\"</span>); <span class=\"js-comment\">// Returns 6, it is case sensitive. If not found it renturns -1</span>"
 		]
 	},
 	{

@@ -1,0 +1,26 @@
+html = [
+	{
+		"name": "Viewport",
+		"code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+	},
+	{
+		"name": "Keywords",
+		"code": "<meta name=\"keywords\" content=\"HTML, CSS, Javascript\">",
+	},
+	{
+		"name": "Stylesheet",
+		"code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">",
+	},
+	{
+		"name": "Script",
+		"code": "<script type=\"text/javascript\" src=\"script.js\"></script>",
+	},
+	{
+		"name": "Input No Autocomplete",
+		"code": "<input autocomplete=\"off\" type=\"search\" name=\"language\">",
+	},
+	{
+		"name": "Form onsubmit",
+		"code": "<form onsubmit=\"myFunction()\">\n  <input type=\"text\" placeholder=\"Insert text\">\n  <button>Submit</button>\n</form>"
+	}
+];
