@@ -248,6 +248,24 @@ body{
 	color: #efef0a; /* Boring yellow */
 }
 
+/* CSS HIGHTLIGHTS */
+
+.css-tag-symbol{
+	color: #ea0958;
+}
+
+.css-atr-value{
+	color: #29c7d8;
+}
+
+.css-class{
+	color: #7ce20f;
+}
+
+.css-number{
+	color: #e173f4;
+}
+
 /* JS HIGHLIGHTS */
 
 .js-reserved{

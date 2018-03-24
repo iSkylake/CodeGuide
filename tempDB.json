@@ -9,7 +9,7 @@ languages = [
 		"name": "CSS3",
 		"color": "grey",
 		"img": "img/css-logo.png",
-		"url": "#"
+		"url": "Css3.html"
 	},
 	{
 		"name": "Javascript",
@@ -86,6 +86,23 @@ html = [
 		]
 	}
 ];
+
+css = [
+	{
+		"name": "Centering Trick",
+		"code": [
+			".<span class=\"css-class\">parent</span>{ <br> ",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">position</span>: <span class=\"css-atr-value\">relative</span>; <br> ",
+			"} <br> <br> ",
+			".<span class=\"css-class\">element</span>{ <br> ",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">position</span>: <span class=\"css-atr-value\">absolute</span>; <br> ",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">top</span>: <span class=\"css-number\">50</span><span class=\"css-tag-symbol\">%</span>; <br> ",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">left</span>: <span class=\"css-number\">50</span><span class=\"css-tag-symbol\">%</span>; <br> ",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">transform</span>: <span class=\"css-atr-value\">translate</span>(<span class=\"css-number\">-50</span><span class=\"css-tag-symbol\">%</span>, <span class=\"css-number\">-50</span><span class=\"css-tag-symbol\">%</span>); <br> ",
+			"}"
+		]
+	}
+]
 
 javascript = [
 	{
