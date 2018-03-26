@@ -12,10 +12,10 @@ for(let i=0; i<javascript.length; i++){
 	scriptName.className += "script-name script-name-js";
 	scripts.className = 'scripts';
 
-	scriptName.innerHTML = '<h3>' + javascript[i].name + '</h3>';
+	scriptName.insertAdjacentHTML('beforeend', '<h3>' + javascript[i].name + '</h3>');
 
 	for(let j=0; j<javascript[i].code.length; j++){
-		scripts.innerHTML += javascript[i].code[j];
+		scripts.insertAdjacentHTML('beforeend', javascript[i].code[j]);
 	}
 	scriptBlock.appendChild(scriptName);
 	scriptBlock.appendChild(scripts);
