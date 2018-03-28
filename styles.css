@@ -178,6 +178,10 @@ body{
 	background-color: #30d333;
 }
 
+.script-name-terminal{
+	background-color: #000000;
+}
+
 .script-name-markdown{
 	background-color: #692be5;
 }

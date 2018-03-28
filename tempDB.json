@@ -45,7 +45,7 @@ languages = [
 		"name": "Terminal",
 		"color": "pink",
 		"img": "img/terminal-logo.png",
-		"url": "#"
+		"url": "Terminal.html"
 	},
 	{
 		"name": "Markdown",
@@ -170,6 +170,55 @@ javascript = [
 		"code": ["childElement.<span class=\"js-reserved\">appendChild</span>(parentElement);"]
 	}
 ];
+
+terminal = [
+	{
+		"name": "Quit Terminal",
+		"code": ["&lt;command&gt; + &lt;q&gt;"]
+	},
+	{
+		"name": "Move to Folder",
+		"code": ["cd 'dirPath'"]
+	},
+	{
+		"name": "File list",
+		"code": [
+			"ls OR ls 'dirPath'"
+		]
+	},
+	{
+		"name": "Open File",
+		"code": ["open -a 'App name' 'filename'"]
+	},
+	{
+		"name": "Create File",
+		"code": ["touch 'filename.extension'"]
+	},
+	{
+		"name": "Create Folder",
+		"code": ["mkdir 'foldername'"]
+	},
+	{
+		"name": "Move File",
+		"code": ["mv 'filename' 'dirPath'"]
+	},
+	{
+		"name": "Delete File",
+		"code": ["rm 'filename'"]
+	},
+	{
+		"name": "Delete Empty Folder",
+		"code": ["rmdir 'foldername'"]
+	},
+	{
+		"name": "Delete Non Empty Folder",
+		"code": ["sudo rm -r 'foldername'"]
+	},
+	{
+		"name": "Search File",
+		"code": ["find ~/ -type f -name 'filename'"]
+	}
+]
 
 markdown = [
 	{
