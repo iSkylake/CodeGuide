@@ -51,7 +51,7 @@ languages = [
 		"name": "Markdown",
 		"color": "blue",
 		"img": "img/markdown-logo.png",
-		"url": "#"
+		"url": "Markdown.html"
 	}
 ];
 
@@ -170,3 +170,85 @@ javascript = [
 		"code": ["childElement.<span class=\"js-reserved\">appendChild</span>(parentElement);"]
 	}
 ];
+
+markdown = [
+	{
+		"name": "Title",
+		"code": ["<span class=\"md-title-url-line\">#</span>This is a Title"]
+	},
+	{
+		"name": "Subtitle",
+		"code": ["<span class=\"md-subtitle\">##</span>This is a Subtitle"]
+	},
+	{
+		"name": "Link",
+		"code": ["<<span class=\"md-ref-url\">www.insertWeb.com</span>>"]
+	},
+	{
+
+		"name": "Reference Link",
+		"code": ["<span class=\"md-symbol\">[</span>Google<span class=\"md-symbol\">]</span><span class=\"md-symbol\">(</span><span class=\"md-ref-url\">https://www.google.com</span><span class=\"md-symbol\">)</span>"]
+	},
+	{
+		"name": "Image Reference Link",
+		"code": ["<span class=\"md-symbol\">![</span>ImgID<span class=\"md-symbol\">]</span><span class=\"md-symbol\">(</span><span class=\"md-ref-url\">imageURL</span><span class=\"md-symbol\">)</span>"]
+	},
+	{
+		"name": "Quote",
+		"code": ["<span class=\"md-symbol\">></span>Random block quote"]
+	},
+	{
+		"name": "Ordered List",
+		"code": [
+			"<span class=\"md-subtitle\">##</span>Ordered List <br> ",
+			"<span class=\"md-number\">1</span><span class=\"md-symbol\">.</span> Item <br> ",
+			"<span class=\"md-number\">2</span><span class=\"md-symbol\">.</span> Item <br> ",
+			"<span class=\"md-number\">3</span><span class=\"md-symbol\">.</span> Item"
+		]
+	},
+	{
+		"name": "Unordered List",
+		"code": [
+			"<span class=\"md-subtitle\">##</span>Unordered List <br> ",
+			"<span class=\"md-symbol\">*</span>Item <br> ",
+			"<span class=\"md-symbol\">*</span>Item <br> ",
+			"<span class=\"md-symbol\">-</span>Item <br> ",
+			"<span class=\"md-symbol\">-</span>Item"
+		]
+	},
+	{
+		"name": "Separation Line",
+		"code": ["<span class=\"md-title-url-line\">==================</span>"]
+	},
+	{
+		"name": "Italic",
+		"code": ["<span class=\"md-symbol\">*</span>italic<span class=\"md-symbol\">*</span>"]
+	},
+	{
+		"name": "Bold",
+		"code": ["<span class=\"md-symbol\">**</span>Bold<span class=\"md-symbol\">**</span>"]
+	},
+	{
+		"name": "Monospace",
+		"code": ["<span class=\"md-monospace\"><span class=\"md-symbol\">`</span>monospace<span class=\"md-symbol\">`</span></span>"]
+	},
+	{
+		"name": "Strikethrough",
+		"code": "--Strikethrough--"
+	}
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

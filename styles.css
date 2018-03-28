@@ -170,8 +170,16 @@ body{
 	background-color: #f27618;
 }
 
+.script-name-css{
+	background-color: #1078ef;
+}
+
 .script-name-js{
 	background-color: #30d333;
+}
+
+.script-name-markdown{
+	background-color: #692be5;
 }
 
 .scripts{
@@ -289,5 +297,31 @@ body{
 }
 
 .js-comment{
-	color: #4d564e; /*.Edgy grey */
+	color: #8c8f93; /*.Edgy grey */
+}
+
+/* MARKDOWN HIGHLIGHT */
+
+.md-title-url-line{
+	color: #ea0958;
+}
+
+.md-subtitle{
+	color: #f28057;
+}
+
+.md-ref-url{
+	color: #29c7d8;
+}
+
+.md-number{
+	color: #e173f4;
+}
+
+.md-monospace{
+	background-color: #4e4e51;
+}
+
+.md-symbol{
+	color: #8c8f93;
 }
