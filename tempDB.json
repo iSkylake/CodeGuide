@@ -39,7 +39,7 @@ languages = [
 		"name": "Vim",
 		"color": "purple",
 		"img": "img/vim-logo.png",
-		"url": "#"
+		"url": "Vim.html"
 	},
 	{
 		"name": "Terminal",
@@ -171,6 +171,98 @@ javascript = [
 	}
 ];
 
+vim = [
+	{
+		"name": "Open File with Vim",
+		"code": ["vim 'filename'"]
+	},
+	{
+		"name": "Open .vimrc",
+		"code": ["vim ~/.vimrc"]
+	},
+	{
+		"name": "Set Number",
+		"code": [":set num"]
+	},
+	{
+		"name": "New Tab",
+		"code": [":tabnew 'filename'"]
+	},
+	{
+		"name": "Go to Next Tab",
+		"code": ["gt"]
+	},
+	{
+		"name": "Go to Previous Tab",
+		"code": ["gT"]
+	},
+	{
+		"name": "Close Tab",
+		"code": [":tabc"]
+	},
+	{
+		"name": "Close All Tab Except Current",
+		"code": [":tabo"]
+	},
+	{
+		"name": "Copy",
+		"code": ["y"]
+	},
+	{
+		"name": "Cut",
+		"code": ["d"]
+	},
+	{
+		"name": "Paste After Cursor",
+		"code": ["p"]
+	},
+	{
+		"name": "Go to First Line",
+		"code": ["gg"]
+	},
+	{
+		"name": "Go to Next Word",
+		"code": ["w"]
+	},
+	{
+		"name": "Go to Next Word After Space",
+		"code": ["W"]
+	},
+	{
+		"name": "Go to Previous Word",
+		"code": ["b"]
+	},
+	{
+		"name": "Go to Previous Word After Space",
+		"code": ["B"]
+	},
+	{
+		"name": "Delete Word",
+		"code": ["dw"]
+	},
+	{
+		"name": "Delete Current Line",
+		"code": ["dd or D"]
+	},
+	{
+		"name": "Delete All",
+		"code": ["dG"]
+	},
+	{
+		"name": "Undo",
+		"code": ["u"]
+	},
+	{
+		"name": "Change Pane",
+		"code": [
+			"CTRL + w + h OR LEFT",
+			"CTRL + w + j OR DOWN",
+			"CTRL + w + k OR UP",
+			"CTRL + w + l OR RIGHT"
+		]
+	}
+]
+
 terminal = [
 	{
 		"name": "Quit Terminal",
@@ -267,7 +359,10 @@ markdown = [
 	},
 	{
 		"name": "Separation Line",
-		"code": ["<span class=\"md-title-url-line\">==================</span>"]
+		"code": [
+			"SEPARATION LINE <br> ",
+			"<span class=\"md-title-url-line\">===============</span>"
+		]
 	},
 	{
 		"name": "Italic",
@@ -286,18 +381,3 @@ markdown = [
 		"code": "--Strikethrough--"
 	}
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
