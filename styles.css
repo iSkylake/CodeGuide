@@ -305,7 +305,7 @@ body{
 }
 
 .js-comment{
-	color: #8c8f93; /*.Edgy grey */
+	color: #8c8f93; /* Edgy grey */
 }
 
 /* MARKDOWN HIGHLIGHT */
@@ -332,4 +332,22 @@ body{
 
 .md-symbol{
 	color: #8c8f93;
+}
+
+/* VIM HIGHLIGHT */
+
+.vim-command{
+	color: #29c7d8;
+}
+
+.vim-key{
+	color: #f28057;
+}
+
+.vim-symbol{
+	color: #7ce20f;
+}
+
+.vim-value{
+	color: #ea0958;
 }

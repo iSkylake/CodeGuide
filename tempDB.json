@@ -174,91 +174,91 @@ javascript = [
 vim = [
 	{
 		"name": "Open File with Vim",
-		"code": ["vim 'filename'"]
+		"code": ["<span class=\"vim-command\">vim</span> filename"]
 	},
 	{
 		"name": "Open .vimrc",
-		"code": ["vim ~/.vimrc"]
+		"code": ["<span class=\"vim-command\">vim</span> ~/.vimrc"]
 	},
 	{
 		"name": "Set Number",
-		"code": [":set num"]
+		"code": [":<span class=\"vim-command\">set</span> <span class=\"vim-value\">num</span>"]
 	},
 	{
 		"name": "New Tab",
-		"code": [":tabnew 'filename'"]
+		"code": [":<span class=\"vim-command\">tabnew</span> filename"]
 	},
 	{
 		"name": "Go to Next Tab",
-		"code": ["gt"]
+		"code": ["<span class=\"vim-key\">gt</span>"]
 	},
 	{
 		"name": "Go to Previous Tab",
-		"code": ["gT"]
+		"code": ["<span class=\"vim-key\">gT</span>"]
 	},
 	{
 		"name": "Close Tab",
-		"code": [":tabc"]
+		"code": [":<span class=\"vim-command\">tabc</span>"]
 	},
 	{
 		"name": "Close All Tab Except Current",
-		"code": [":tabo"]
+		"code": [":<span class=\"vim-command\">tabo</span>"]
 	},
 	{
 		"name": "Copy",
-		"code": ["y"]
+		"code": ["<span class=\"vim-key\">y</span>"]
 	},
 	{
 		"name": "Cut",
-		"code": ["d"]
+		"code": ["<span class=\"vim-key\">d</span>"]
 	},
 	{
 		"name": "Paste After Cursor",
-		"code": ["p"]
+		"code": ["<span class=\"vim-key\">p</span>"]
 	},
 	{
 		"name": "Go to First Line",
-		"code": ["gg"]
+		"code": ["<span class=\"vim-key\">gg</span>"]
 	},
 	{
 		"name": "Go to Next Word",
-		"code": ["w"]
+		"code": ["<span class=\"vim-key\">w</span>"]
 	},
 	{
 		"name": "Go to Next Word After Space",
-		"code": ["W"]
+		"code": ["<span class=\"vim-key\">W</span>"]
 	},
 	{
 		"name": "Go to Previous Word",
-		"code": ["b"]
+		"code": ["<span class=\"vim-key\">b</span>"]
 	},
 	{
 		"name": "Go to Previous Word After Space",
-		"code": ["B"]
+		"code": ["<span class=\"vim-key\">B</span>"]
 	},
 	{
 		"name": "Delete Word",
-		"code": ["dw"]
+		"code": ["<span class=\"vim-key\">dw</span>"]
 	},
 	{
 		"name": "Delete Current Line",
-		"code": ["dd or D"]
+		"code": ["<span class=\"vim-key\">dd</span> <span class=\"vim-symbol\">OR</span> <span class=\"vim-key\">D</span>"]
 	},
 	{
 		"name": "Delete All",
-		"code": ["dG"]
+		"code": ["<span class=\"vim-key\">dG</span>"]
 	},
 	{
 		"name": "Undo",
-		"code": ["u"]
+		"code": ["<span class=\"vim-key\">u</span>"]
 	},
 	{
 		"name": "Change Pane",
 		"code": [
-			"CTRL + w + h OR LEFT",
-			"CTRL + w + j OR DOWN",
-			"CTRL + w + k OR UP",
-			"CTRL + w + l OR RIGHT"
+			"<span class=\"vim-key\">CTRL</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">w</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">h</span> <span class=\"vim-symbol\">OR</span> <span class=\"vim-key\">LEFT</span> <br> ",
+			"<span class=\"vim-key\">CTRL</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">w</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">j</span> <span class=\"vim-symbol\">OR</span> <span class=\"vim-key\">DOWN</span> <br> ",
+			"<span class=\"vim-key\">CTRL</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">w</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">k</span> <span class=\"vim-symbol\">OR</span> <span class=\"vim-key\">UP</span> <br> ",
+			"<span class=\"vim-key\">CTRL</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">w</span> <span class=\"vim-symbol\">+</span> <span class=\"vim-key\">l</span> <span class=\"vim-symbol\">OR</span> <span class=\"vim-key\">RIGHT</span>"
 		]
 	}
 ]
