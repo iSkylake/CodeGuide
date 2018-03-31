@@ -33,7 +33,7 @@ languages = [
 		"name": "MongoDB",
 		"color": "pink",
 		"img": "img/mongo-logo.png",
-		"url": "#"
+		"url": "MongoDB.html"
 	},
 	{
 		"name": "Vim",
@@ -222,6 +222,60 @@ python = [
 			"games <span class=\"python-symbol\">=</span> {<span class=\"python-string\">'Plaformer'</span>: <span class=\"python-string\">'Super Mario'</span>, <span class=\"python-string\">'RPG'</span>: <span class=\"python-string\">'Pokemon'</span>, <span class=\"python-string\">'Action-Adventure'</span>: <span class=\"python-string\">'Legend of Zelda'</span>} <br> <br> ",
 			"<span class=\"python-symbol\">for</span> k, v <span class=\"python-symbol\">in</span> games.<span class=\"python-reserved\">items</span>(): <br> ",
 			"&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"python-reserved\">print</span>(k <span class=\"python-symbol\">+</span> <span class=\"python-string\">': '</span> <span class=\"python-symbol\">+</span> v)"
+		]
+	}
+]
+
+mongodb = [
+	{
+		"name": "Run Database",
+		"code": ["sudo mongod"]
+	},
+	{
+		"name": "Begin Using Database",
+		"code": ["mongo"]
+	},
+	{
+		"name": "Show All Databases",
+		"code": ["show dbs"]
+	},
+	{
+		"name": "Select Database",
+		"code": ["use 'databaseName'"]
+	},
+	{
+		"name": "Show Database Collection",
+		"code": ["show collections"]
+	},
+	{
+		"name": "Insert Document to Collection",
+		"code": ["db.collection.insert({name: \"GTX 1080\", type: \"GPU\", price: \"$599.99\"})"]
+	},
+	{
+		"name": "Show All Documents in Collection",
+		"code": ["db.collection.find()"]
+	},
+	{
+		"name": "Show Single Document in Collection",
+		"code": ["db.collection.find({name: \"GTX 1080\"})"]
+	},
+	{
+		"name": "Modify Document",
+		"code": ["db.collection.update({name: \"GTX 1080\"}, {$set: {price: \"$1499.99\"}})"]
+	},
+	{
+		"name": "Delete Document",
+		"code": ["db.collection.remove({name: \"GTX 1080\"})"]
+	},
+	{
+		"name": "Delete Collection",
+		"code": ["db.collection.drop()"]
+	},
+	{
+		"name": "Delete Database",
+		"code": [
+			"use databaseName </br> ",
+			"db.dropDatabase()"
 		]
 	}
 ]
