@@ -21,7 +21,7 @@ languages = [
 		"name": "NodeJS",
 		"color": "red",
 		"img": "img/node-logo.png",
-		"url": "#"
+		"url": "NodeJS.html"
 	},
 	{
 		"name": "Python",
@@ -167,7 +167,30 @@ javascript = [
 	},
 	{
 		"name": "Append Child Node",
-		"code": ["childElement.<span class=\"js-reserved\">appendChild</span>(parentElement);"]
+		"code": ["parentElement.<span class=\"js-reserved\">appendChild</span>(childElement);"]
+	},
+	{
+		"name": "Append String HTML",
+		"code": ["parentElement.<span class=\"js-reserved\">insertAdjacentHTML</span>(<span class=\"js-string\">'beforeend'</span>, <span class=\"js-string\">'&lt;p>Random paragraph element&lt;/p>'</span>);"]
+	}
+];
+
+nodeJS = [
+	{
+		"name": "Exporting Modules",
+		"code": [
+			"<span class=\"js-reserved\">const</span> <span class=\"js-class\">square</span> <span class=\"js-symbols\">=</span> <span class=\"js-reserved\">function</span>(<span class=\"js-params\">x</span>){ <br> ",
+			"&nbsp;&nbsp;<span class=\"js-symbols\">return</span> x<span class=\"js-symbols\">**</span><span class=\"js-numbers\">2</span>; <br> ",
+			"} <br> <br> ",
+			"<span class=\"js-reserved\">module.exports</span> <span class=\"js-symbols\">=</span> square"
+		]
+	},
+	{
+		"name": "Importing Modules",
+		"code": [
+			"<span class=\"js-reserved\">const</span> square <span class=\"js-symbols\">=</span> <span class=\"js-reserved\">require</span>(<span class=\"js-string\">'./square'</span>); <br> <br> ",
+			"<span class=\"js-reserved\">console</span>.<span class=\"js-reserved\">log</span>(<span class=\"js-string\">\"Square of 5: \"</span> <span class=\"js-symbols\">+</span> <span class=\"js-reserved\">square</span>(<span class=\"js-numbers\">5</span>));"
+		]
 	}
 ];
 

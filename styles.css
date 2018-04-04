@@ -178,6 +178,10 @@ body{
 	background-color: #30d333;
 }
 
+.script-name-nodejs{
+	background-color: #30d333;
+}
+
 .script-name-python{
 	background-color: #1a55ed;
 }
@@ -314,6 +318,10 @@ body{
 
 .js-comment{
 	color: #8c8f93; /* Edgy grey */
+}
+
+.js-class{
+	color: #7ce20f;
 }
 
 /* MARKDOWN HIGHLIGHT */
