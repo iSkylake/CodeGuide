@@ -48,6 +48,12 @@ languages = [
 		"url": "Terminal.html"
 	},
 	{
+		"name": "Git",
+		"color": "purple",
+		"img": "img/git-logo.png",
+		"url": ""
+	},
+	{
 		"name": "Markdown",
 		"color": "blue",
 		"img": "img/markdown-logo.png",
