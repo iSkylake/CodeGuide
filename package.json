@@ -1,0 +1,22 @@
+{
+  "name": "codeguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSkylake/CodeGuide.git"
+  },
+  "author": "Llorch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSkylake/CodeGuide/issues"
+  },
+  "homepage": "https://github.com/iSkylake/CodeGuide#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

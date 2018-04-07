@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+
+	<nav id="navbar">
+		<div>
+			<a href="/"><i class="fas fa-caret-left back-icon"></i></a>
+			<i class="icon-title"></i>
+			<h1>HTML5</h1>
+		</div>
+		<div>
+<!-- 				<input id="search-language-input" autocomplete="off" type="search" name="language">
+				<i class="fas fa-search search-icon"></i> -->
+		</div>
+	</nav>
+
+	<div class="container script-container">
+
+	</div>
+
+	<script type="text/javascript" src="../tempDB.json"></script>
+	<script type="text/javascript">
+		let scriptContainer = document.getElementsByClassName("script-container");
+		let copyIcon = document.getElementsByClassName("copy-icon");
+		let scripts = document.getElementsByClassName("scripts");
+		let titleTag = document.getElementsByTagName("title");
+		let titleName = document.getElementsByTagName("h1");
+		let iconTitle = document.getElementsByClassName("icon-title");
+
+		titleTag[0].textContent = #LANG.title;
+		titleName[0].textContent = #LANG.title;
+		iconTitle[0].classList += " " + #LANG.icon;
+
+		// Display all JS scripts
+		for(let i=0; i<#LANG.script.length; i++){
+			let scriptBlock = document.createElement("div");
+			let scriptName = document.createElement("div");
+			let scripts = document.createElement("code");
+
+			scriptBlock.className = "script-block";
+			scriptName.className += "script-name script-name-#LANG";
+			scripts.className = 'scripts';
+
+			scriptName.insertAdjacentHTML('beforeend', '<h3>' + #LANG.script[i].name + '</h3>');
+
+			for(let j=0; j<#LANG.script[i].code.length; j++){
+				scripts.insertAdjacentHTML('beforeend', #LANG.script[i].code[j]);
+			}
+			scriptBlock.appendChild(scriptName);
+			scriptBlock.appendChild(scripts);
+
+			// Create copy icon		
+			let newCopyIcon = document.createElement("i");
+			let tooltip = document.createElement("span");
+			tooltip.appendChild(document.createTextNode("Copy"));
+			newCopyIcon.className += "far fa-copy copy-icon";
+			tooltip.className = "tooltip";
+			newCopyIcon.appendChild(tooltip);
+			scriptBlock.appendChild(newCopyIcon);
+
+			scriptContainer[0].appendChild(scriptBlock);
+		}
+
+		// Copy functionality
+		for(let i=0; i<copyIcon.length; i++){
+			copyIcon[i].addEventListener("click", function(){
+				var range = window.getSelection().getRangeAt(0);
+				range.selectNode(scripts[i]);
+				window.getSelection(range);
+				document.execCommand("copy");
+				// window.getSelection().removeAllRanges();
+			});
+		}
+	</script>
+</body>
+</html>
