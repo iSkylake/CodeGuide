@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/public/views/CodeGuide.html');
+	res.sendFile(__dirname + '/public/views/index.html');
 });
 
 app.get('/:language', function(req, res){
