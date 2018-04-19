@@ -78,6 +78,10 @@ html = {
 			"code": ["<<span class=\"html-tag\">link</span> <span class=\"html-atr\">rel</span>=<span class=\"html-string\">\"stylesheet\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/css\"</span> <span class=\"html-atr\">href</span>=<span class=\"html-string\">\"styles.css\"</span>>"],
 		},
 		{
+			"name": "Favicon",
+			"code": ["<<span class=\"html-tag\">link</span> <span class=\"html-atr\">rel</span>=<span class=\"html-string\">\"shortcut icon\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"image/png\"</span> <span class=\"html-atr\">href</span>=<span class=\"html-string\">\"./img/favicon.png\"</span>/>"]
+		},
+		{
 			"name": "Script",
 			"code": ["<<span class=\"html-tag\">script</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/javascript\"</span> <span class=\"html-atr\">src</span>=<span class=\"html-string\">\"script.js\"</span>>&lt;/<span class=\"html-tag\">script</span>>"],
 		},
