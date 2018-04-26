@@ -87,6 +87,7 @@ body{
 	display: inline-block;
 	margin-right: 30px;
 	margin-bottom: 30px;
+	overflow: hidden;
 	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3),  -1px -1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -104,7 +105,7 @@ body{
 
 .lang-box img{
 	width: 100%;
-	transition: opacity 0.3s, filter 0.2s;
+	transition: opacity 0.3s, filter 0.2s, transform 0.3s linear;
 }
 
 /* Hover Animation */
@@ -112,6 +113,7 @@ body{
 .lang-box:hover img{
 	opacity: 0.2;
 	filter: grayscale(100%);
+	transform: scale(0.9);
 }
 
 .lang-box:hover h1{
@@ -163,9 +165,18 @@ body{
 	position: relative;
 }
 
+.scripts{
+	padding: 30px;
+	display: block;
+	overflow: scroll;
+	/*position: relative;*/
+}
+
 .script-name{
 	padding: 3px 10px;
 }
+
+/* SCRIPT NAME BACKGROUND COLOR */
 
 .script-name-html{
 	background-color: #f27618;
@@ -205,12 +216,6 @@ body{
 
 .script-name-markdown{
 	background-color: #692be5;
-}
-
-.scripts{
-	padding: 30px;
-	display: block;
-	/*position: relative;*/
 }
 
 .copy-icon{

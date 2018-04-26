@@ -9,7 +9,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/:language', function(req, res){
-	fs.readFile(__dirname + "/public/views/LanguageScript.html", function(err, data){
+	fs.readFile(__dirname + "/public/views/languageScript.html", function(err, data){
 		if(err){
 			throw err;
 		}

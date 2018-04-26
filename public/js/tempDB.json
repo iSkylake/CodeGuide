@@ -71,11 +71,11 @@ html = {
 		},
 		{
 			"name": "Keywords",
-			"code": ["<<span class=\"html-tag\">meta</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"keywords\"</span> <span class=\"html-atr\">content</span>=<span class=\"html-string\">\"HTML, CSS, Javascript\"</span>>"],
+			"code": ["<<span class=\"html-tag\">meta</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"keywords\"</span> <span class=\"html-atr\">content</span>=<span class=\"html-string\">\"HTML, CSS, Javascript\"</span>>"]
 		},
 		{
 			"name": "Stylesheet",
-			"code": ["<<span class=\"html-tag\">link</span> <span class=\"html-atr\">rel</span>=<span class=\"html-string\">\"stylesheet\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/css\"</span> <span class=\"html-atr\">href</span>=<span class=\"html-string\">\"styles.css\"</span>>"],
+			"code": ["<<span class=\"html-tag\">link</span> <span class=\"html-atr\">rel</span>=<span class=\"html-string\">\"stylesheet\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/css\"</span> <span class=\"html-atr\">href</span>=<span class=\"html-string\">\"styles.css\"</span>>"]
 		},
 		{
 			"name": "Favicon",
@@ -83,11 +83,11 @@ html = {
 		},
 		{
 			"name": "Script",
-			"code": ["<<span class=\"html-tag\">script</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/javascript\"</span> <span class=\"html-atr\">src</span>=<span class=\"html-string\">\"script.js\"</span>>&lt;/<span class=\"html-tag\">script</span>>"],
+			"code": ["<<span class=\"html-tag\">script</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"text/javascript\"</span> <span class=\"html-atr\">src</span>=<span class=\"html-string\">\"script.js\"</span>>&lt;/<span class=\"html-tag\">script</span>>"]
 		},
 		{
 			"name": "Input No Autocomplete",
-			"code": ["<<span class=\"html-tag\">input</span> <span class=\"html-atr\">autocomplete</span>=<span class=\"html-string\">\"off\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"search\"</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"language\"</span>>"],
+			"code": ["<<span class=\"html-tag\">input</span> <span class=\"html-atr\">autocomplete</span>=<span class=\"html-string\">\"off\"</span> <span class=\"html-atr\">type</span>=<span class=\"html-string\">\"search\"</span> <span class=\"html-atr\">name</span>=<span class=\"html-string\">\"language\"</span>>"]
 		},
 		{
 			"name": "Form onsubmit",
