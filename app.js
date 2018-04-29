@@ -14,9 +14,9 @@ app.get('/:language', function(req, res){
 			throw err;
 		}
 		let htmlString = data.toString();
-		let matched = htmlString.match(/#LANG/gi).length;
+		let matched = htmlString.match(/{language}/gi).length;
 		for(let i=0; i<matched; i++){
-			htmlString = htmlString.replace('#LANG', req.params.language);
+			htmlString = htmlString.replace('{language}', req.params.language);
 		}
 		res.send(htmlString);
 	});

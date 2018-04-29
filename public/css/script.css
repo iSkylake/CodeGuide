@@ -1,0 +1,124 @@
+@import "syntaxHighlight.css";
+
+/* LANGUAGE SCRIPTS */
+
+.script-container{
+	width: 80%;
+}
+
+.script-block{
+	width: 100%;
+	background-color: #2b2c2d;
+	margin-bottom: 30px;
+	box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.scripts{
+	padding: 30px;
+	display: block;
+	overflow: scroll;
+	/*position: relative;*/
+}
+
+.script-name{
+	padding: 3px 10px;
+}
+
+/* SCRIPT NAME BACKGROUND COLOR */
+
+.script-name-html{
+	background-color: #f27618;
+}
+
+.script-name-css{
+	background-color: #1078ef;
+}
+
+.script-name-javascript{
+	background-color: #30d333;
+}
+
+.script-name-nodejs{
+	background-color: #30d333;
+}
+
+.script-name-python{
+	background-color: #1a55ed;
+}
+
+.script-name-mongodb{
+	background-color: #33d824;
+}
+
+.script-name-vim{
+	background-color: #19aa3b;
+}
+
+.script-name-terminal{
+	background-color: #000000;
+}
+
+.script-name-git{
+	background-color: #f27618;
+}
+
+.script-name-markdown{
+	background-color: #692be5;
+}
+
+.copy-icon{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	font-size: 25px;
+	transform: translate(-50%, -5%);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.copy-icon:hover{
+	color: #4dadf7;
+}
+
+.script-block:hover .copy-icon{
+	opacity: 1;
+}
+
+/* COPY TOOLTIP */
+
+.tooltip{
+	opacity: 0;
+	width: 60px;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 17px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 135%;
+	left: 50%;
+	margin-left: -30px;
+	transform: translate(0, 10px);
+	transition: transform 0.5s 0.07s, opacity 0.3s 0.07s;
+}
+
+.tooltip::after{
+	content: " ";
+	position: absolute;
+	top: 100%; 
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.copy-icon:hover .tooltip{
+	opacity: 1;
+	transform: translate(0, 0);
+	transition: transform 0.2s 0.1s, opacity 0.5s, 0.1;
+}

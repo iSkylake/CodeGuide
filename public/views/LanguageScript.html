@@ -36,24 +36,24 @@
 		let scriptBlock = document.getElementsByClassName("script-block");
 		let searchScript = document.getElementById("search-script");
 
-		titleTag[0].textContent = #LANG.title;
-		titleName[0].textContent = #LANG.title;
-		iconTitle[0].classList += " " + #LANG.icon;
+		titleTag[0].textContent = {language}.title;
+		titleName[0].textContent = {language}.title;
+		iconTitle[0].classList += " " + {language}.icon;
 
 		// Display all JS scripts
-		for(let i=0; i<#LANG.script.length; i++){
+		for(let i=0; i<{language}.script.length; i++){
 			let scriptBlock = document.createElement("div");
 			let scriptName = document.createElement("div");
 			let scripts = document.createElement("code");
 
 			scriptBlock.className = "script-block";
-			scriptName.className += "script-name script-name-#LANG";
+			scriptName.className += "script-name script-name-{language}";
 			scripts.className = 'scripts';
 
-			scriptName.insertAdjacentHTML('beforeend', '<h3>' + #LANG.script[i].name + '</h3>');
+			scriptName.insertAdjacentHTML('beforeend', '<h3>' + {language}.script[i].name + '</h3>');
 
-			for(let j=0; j<#LANG.script[i].code.length; j++){
-				scripts.insertAdjacentHTML('beforeend', #LANG.script[i].code[j]);
+			for(let j=0; j<{language}.script[i].code.length; j++){
+				scripts.insertAdjacentHTML('beforeend', {language}.script[i].code[j]);
 			}
 			scriptBlock.appendChild(scriptName);
 			scriptBlock.appendChild(scripts);
