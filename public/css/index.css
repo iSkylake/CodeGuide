@@ -140,3 +140,50 @@
 .grey{
 	background-color: #546E7A;
 }
+
+@media only screen and (max-width: 500px){
+	#navbar div  h1{
+		font-size: 20px;
+	}
+
+	#navbar div input{
+		width: 90px;
+	}
+
+	.back-icon{
+		font-size: 35px;
+		margin-right: 10px;
+	}
+
+	.icon-title{
+		font-size: 25px;
+	}
+
+	#navbar div{
+		margin: 0 20px;
+	}
+}
+
+ @media only screen and (max-width: 350px){
+	#navbar div h1{
+		font-size: 15px;
+	}
+
+	.back-icon{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+
+	.icon-title{
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	#navbar div input{
+		font-size: 14px;
+	}
+
+	.search-icon{
+		font-size: 17px;
+	}
+}
