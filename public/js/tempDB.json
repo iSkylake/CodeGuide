@@ -135,6 +135,13 @@ javascript = {
 			]
 		},
 		{
+			"name": "Unshift",
+			"code": [
+				"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>, <span class=\"js-numbers\">4</span>]; <br> <br>",
+				"arr.<span class=\"js-reserved\">unshift</span>(<span class=\"js-numbers\">1</span>); <span class=\"js-comment\">// Adds 1 to the beginning of the array</span>"
+			]
+		},
+		{
 			"name": "Array Slice",
 			"code": [
 				"<span class=\"js-reserved\">let</span> arr <span class=\"js-symbols\">=</span> [<span class=\"js-numbers\">1</span>, <span class=\"js-numbers\">2</span>, <span class=\"js-numbers\">3</span>, <span class=\"js-numbers\">4</span>, <span class=\"js-numbers\">5</span>]; <br> <br> ",

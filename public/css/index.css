@@ -67,6 +67,7 @@
 	margin: 0 auto;
 	margin-top: 2px;
 	padding-top: 20px;
+	padding-left: 20px;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
@@ -141,6 +142,18 @@
 	background-color: #546E7A;
 }
 
+/* RESPONSIVE DESIGN FOR MOBILE */
+
+/* Tablets */
+
+@media only screen and (max-width: 1050px){
+	.lang-box{
+		width: 28%;
+	}
+}
+
+/* Phones */
+
 @media only screen and (max-width: 500px){
 	#navbar div  h1{
 		font-size: 20px;
@@ -162,9 +175,19 @@
 	#navbar div{
 		margin: 0 20px;
 	}
+
+	.lang-box{
+		width: 40%;
+	}
+
+	.lang-box:hover h1{
+		font-size: 1em;
+	}
 }
 
- @media only screen and (max-width: 350px){
+/* Smaller phones */
+
+@media only screen and (max-width: 350px){
 	#navbar div h1{
 		font-size: 15px;
 	}
