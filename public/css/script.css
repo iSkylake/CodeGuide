@@ -84,7 +84,7 @@
 	color: #4dadf7;
 }
 
-.script-block:hover .copy-icon{
+.scripts:hover + .copy-icon{
 	opacity: 1;
 }
 
