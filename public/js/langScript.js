@@ -53,6 +53,19 @@ for(let i=0; i<copyIcon.length; i++){
 	});
 };
 
+// Tooltip text change
+for(let i=0; i<copyIcon.length; i++){
+	copyIcon[i].addEventListener("mouseover", function(){
+		tooltip[i].textContent = 'Copy';
+	});
+}
+
+for(let i=0; i<copyIcon.length; i++){
+	copyIcon[i].addEventListener("click", function(){
+		tooltip[i].textContent = 'Copied';
+	});
+}
+
 // Script Dynamic Search	
 searchScript.addEventListener("keyup", function(){
 	for(let i=0; i<scriptBlock.length; i++){
