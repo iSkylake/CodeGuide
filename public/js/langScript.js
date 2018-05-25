@@ -1,5 +1,6 @@
 let scriptContainer = document.getElementsByClassName("script-container");
 let copyIcon = document.getElementsByClassName("copy-icon");
+let tooltip = document.getElementsByClassName("tooltip");
 let scripts = document.getElementsByClassName("scripts");
 let titleTag = document.getElementsByTagName("title");
 let titleName = document.getElementsByTagName("h1");

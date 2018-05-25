@@ -82,6 +82,7 @@
 
 .copy-icon:hover{
 	color: #4dadf7;
+	opacity: 1;
 }
 
 .scripts:hover + .copy-icon{
