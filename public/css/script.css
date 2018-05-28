@@ -124,7 +124,21 @@
 .copy-icon:hover .tooltip{
 	opacity: 1;
 	transform: translate(0, 0);
-	transition: transform 0.2s 0.1s, opacity 0.5s, 0.1;
+	transition: transform 0.2s 0.1s, opacity 0.5s 0.1s;
+}
+
+/* Tooltip bounce animation after click copy-icon */
+.bounce-animation{
+	animation-name: bouncing;
+	animation-duration: 0.75s;
+	transform-origin: bottom center;
+}
+
+@keyframes bouncing{
+	0% {transform: scale(1.2);}
+	33% {transform: scale(0.8);}
+	66% {transform: scale(1.1);}
+	100% {transform: scale(1);}
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE */

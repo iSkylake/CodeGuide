@@ -57,12 +57,14 @@ for(let i=0; i<copyIcon.length; i++){
 for(let i=0; i<copyIcon.length; i++){
 	copyIcon[i].addEventListener("mouseover", function(){
 		tooltip[i].textContent = 'Copy';
+		tooltip[i].classList.remove('bounce-animation');
 	});
 }
 
 for(let i=0; i<copyIcon.length; i++){
 	copyIcon[i].addEventListener("click", function(){
 		tooltip[i].textContent = 'Copied';
+		tooltip[i].classList.add('bounce-animation');
 	});
 }
 
