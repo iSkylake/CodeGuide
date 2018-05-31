@@ -7,6 +7,7 @@ let titleName = document.getElementsByTagName("h1");
 let iconTitle = document.getElementsByClassName("icon-title");
 let scriptBlock = document.getElementsByClassName("script-block");
 let searchScript = document.getElementById("search-script");
+let notFound = document.getElementsByClassName("not-found");
 
 titleTag[0].textContent = languages.title;
 titleName[0].textContent = languages.title;
@@ -70,11 +71,20 @@ for(let i=0; i<copyIcon.length; i++){
 
 // Script Dynamic Search	
 searchScript.addEventListener("keyup", function(){
+	let hiddenScript = 0;
 	for(let i=0; i<scriptBlock.length; i++){
 		if(scriptBlock[i].children[0].textContent.toLowerCase().indexOf(searchScript.value.toLowerCase()) > -1 || scriptBlock[i].children[1].textContent.toLowerCase().indexOf(searchScript.value.toLowerCase()) > -1){
-			scriptBlock[i].style.display = "";
+			scriptBlock[i].style.display = "block";
 		} else {
 			scriptBlock[i].style.display = "none";
+			hiddenScript++;
 		}
+	}
+	console.log(hiddenScript === scriptBlock.length);
+	if(scriptBlock.length === hiddenScript){
+		notFound[0].style.display = "block";
+		console.log('DAFUQ');
+	} else {
+		notFound[0].style.display = "none";
 	}
 });
