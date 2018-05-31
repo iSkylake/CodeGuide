@@ -80,10 +80,8 @@ searchScript.addEventListener("keyup", function(){
 			hiddenScript++;
 		}
 	}
-	console.log(hiddenScript === scriptBlock.length);
 	if(scriptBlock.length === hiddenScript){
 		notFound[0].style.display = "block";
-		console.log('DAFUQ');
 	} else {
 		notFound[0].style.display = "none";
 	}
