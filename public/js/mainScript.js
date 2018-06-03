@@ -24,12 +24,12 @@ for(let i=0; i<languages.length; i++){
 // DYNAMIC SEARCH FUNCTION
 
 searchLangInput.addEventListener("keyup", function(){
-	let langElements = container[0].children;
-	for(let i=0; i<langElements.length; i++){
-		if(langElements[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
-			langElements[i].style.display = "";
+	let langBox = document.getElementsByClassName('lang-box');
+	for(let i=0; i<langBox.length; i++){
+		if(langBox[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
+			langBox[i].style.display = "block";
 		} else {
-			langElements[i].style.display = "none";
+			langBox[i].style.display = "none";
 		}
 	}
 });
