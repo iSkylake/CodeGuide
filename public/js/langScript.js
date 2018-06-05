@@ -1,17 +1,17 @@
-let scriptContainer = document.getElementsByClassName("script-container");
+let scriptContainer = document.getElementsByClassName("script-container")[0];
 let copyIcon = document.getElementsByClassName("copy-icon");
 let tooltip = document.getElementsByClassName("tooltip");
 let scripts = document.getElementsByClassName("scripts");
-let titleTag = document.getElementsByTagName("title");
-let titleName = document.getElementsByTagName("h1");
-let iconTitle = document.getElementsByClassName("icon-title");
+let titleTag = document.getElementsByTagName("title")[0];
+let titleName = document.getElementsByTagName("h1")[0];
+let iconTitle = document.getElementsByClassName("icon-title")[0];
 let scriptBlock = document.getElementsByClassName("script-block");
 let searchScript = document.getElementById("search-script");
-let notFound = document.getElementsByClassName("not-found");
+let notFound = document.getElementsByClassName("not-found")[0];
 
-titleTag[0].textContent = languages.title;
-titleName[0].textContent = languages.title;
-iconTitle[0].classList += " " + languages.icon;
+titleTag.textContent = languages.title;
+titleName.textContent = languages.title;
+iconTitle.classList += " " + languages.icon;
 
 // Display all JS scripts
 for(let i=0; i<languages.script.length; i++){
@@ -40,7 +40,7 @@ for(let i=0; i<languages.script.length; i++){
 	newCopyIcon.appendChild(tooltip);
 	scriptBlock.appendChild(newCopyIcon);
 
-	scriptContainer[0].appendChild(scriptBlock);
+	scriptContainer.appendChild(scriptBlock);
 }
 
 // Copy functionality
@@ -81,8 +81,8 @@ searchScript.addEventListener("keyup", function(){
 		}
 	}
 	if(scriptBlock.length === hiddenScript){
-		notFound[0].style.display = "block";
+		notFound.style.display = "block";
 	} else {
-		notFound[0].style.display = "none";
+		notFound.style.display = "none";
 	}
 });

@@ -1,4 +1,4 @@
-let container = document.getElementsByClassName("container");
+let container = document.getElementsByClassName("container")[0];
 let searchLangInput = document.getElementById("search-language-input");
 
 // CREATE HTML ELEMENTS TO APPEND FUNCTION
@@ -18,7 +18,7 @@ for(let i=0; i<languages.length; i++){
 	langBox.appendChild(langName);
 	langBox.appendChild(langUrl);
 
-	container[0].appendChild(langBox);
+	container.appendChild(langBox);
 }
 
 // DYNAMIC SEARCH FUNCTION
