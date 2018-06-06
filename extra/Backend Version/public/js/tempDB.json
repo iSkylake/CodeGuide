@@ -210,6 +210,10 @@ javascript = {
 			]
 		},
 		{
+			"name": "Number of Mateches",
+			"code": ["<span class=\"js-reserved\">let</span> matches = str.<span class=\"js-reserved\">match</span>(<span class=\"js-string\">/someString/</span><span class=\"js-symbols\">gi</span>).length;"]
+		},
+		{
 			"name": "Template Literals",
 			"code": [
 				"<span class=\"js-string\">`You can write</span> ${expressions} <span class=\"js-string\">here`</span>"
