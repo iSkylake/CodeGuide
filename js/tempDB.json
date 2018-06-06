@@ -687,7 +687,7 @@ markdown = {
 		},
 		{
 			"name": "Strikethrough",
-			"code": "--Strikethrough--"
+			"code": "~~Strikethrough~~"
 		}
 	]
 };
