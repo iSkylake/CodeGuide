@@ -24,7 +24,7 @@ for(let i=0; i<languages.length; i++){
 // DYNAMIC SEARCH FUNCTION
 
 searchLangInput.addEventListener("keyup", function(){
-	let langElements = container[0].children;
+	let langElements = container.children;
 	for(let i=0; i<langElements.length; i++){
 		if(langElements[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
 			langElements[i].style.display = "";
