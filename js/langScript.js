@@ -60,19 +60,33 @@ const language = (function(){
 	};
 
 	// Tooltip text change
-	for(let i=0; i<copyIcon.length; i++){
-		copyIcon[i].addEventListener("mouseover", function(){
-			tooltip[i].textContent = 'Copy';
-			tooltip[i].classList.remove('bounce-animation');
-		});
-	}
+	scriptContainer.addEventListener('mouseover', function(e){
+		if(e.target && e.target.nodeName === 'I'){
+			e.target.children[0].textContent = 'Copy';
+			e.target.children[0].classList.remove('bounce-animation');
+		}
+	});
 
-	for(let i=0; i<copyIcon.length; i++){
-		copyIcon[i].addEventListener("click", function(){
-			tooltip[i].textContent = 'Copied';
-			tooltip[i].classList.add('bounce-animation');
-		});
-	}
+	// for(let i=0; i<copyIcon.length; i++){
+	// 	copyIcon[i].addEventListener("mouseover", function(){
+	// 		tooltip[i].textContent = 'Copy';
+	// 		tooltip[i].classList.remove('bounce-animation');
+	// 	});
+	// }
+
+	scriptContainer.addEventListener('click', function(e){
+		if(e.target && e.target.nodeName === 'I'){
+			e.target.children[0].textContent = 'Copied';
+			e.target.children[0].classList.add('bounce-animation');
+		}
+	});
+
+	// for(let i=0; i<copyIcon.length; i++){
+	// 	copyIcon[i].addEventListener("click", function(){
+	// 		tooltip[i].textContent = 'Copied';
+	// 		tooltip[i].classList.add('bounce-animation');
+	// 	});
+	// }
 
 	// Script Dynamic Search	
 	searchScript.addEventListener("keyup", function(){
