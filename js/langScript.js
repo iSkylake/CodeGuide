@@ -49,15 +49,15 @@ const language = (function(){
 	}
 
 	// Copy functionality
-	for(let i=0; i<copyIcon.length; i++){
-		copyIcon[i].addEventListener("click", function(){
-			var range = window.getSelection().getRangeAt(0);
-			range.selectNode(scripts[i]);
-			window.getSelection(range);
-			document.execCommand("copy");
-			// window.getSelection().removeAllRanges();
-		});
-	};
+	// for(let i=0; i<copyIcon.length; i++){
+	// 	copyIcon[i].addEventListener("click", function(){
+	// 		var range = window.getSelection().getRangeAt(0);
+	// 		range.selectNode(scripts[i]);
+	// 		window.getSelection(range);
+	// 		document.execCommand("copy");
+	// 		// window.getSelection().removeAllRanges();
+	// 	});
+	// };
 
 	// Tooltip text change
 	scriptContainer.addEventListener('mouseover', function(e){
@@ -78,6 +78,10 @@ const language = (function(){
 		if(e.target && e.target.nodeName === 'I'){
 			e.target.children[0].textContent = 'Copied';
 			e.target.children[0].classList.add('bounce-animation');
+			let range = window.getSelection().getRangeAt(0);
+			range.selectNode(e.target.previousSibling);
+			window.getSelection(range);
+			document.execCommand("copy");
 		}
 	});
 
