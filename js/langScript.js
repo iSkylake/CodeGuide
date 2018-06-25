@@ -48,17 +48,6 @@ const language = (function(){
 		scriptContainer.appendChild(scriptBlock);
 	}
 
-	// Copy functionality
-	// for(let i=0; i<copyIcon.length; i++){
-	// 	copyIcon[i].addEventListener("click", function(){
-	// 		var range = window.getSelection().getRangeAt(0);
-	// 		range.selectNode(scripts[i]);
-	// 		window.getSelection(range);
-	// 		document.execCommand("copy");
-	// 		// window.getSelection().removeAllRanges();
-	// 	});
-	// };
-
 	// Tooltip text change
 	scriptContainer.addEventListener('mouseover', function(e){
 		if(e.target && e.target.nodeName === 'I'){
@@ -67,13 +56,7 @@ const language = (function(){
 		}
 	});
 
-	// for(let i=0; i<copyIcon.length; i++){
-	// 	copyIcon[i].addEventListener("mouseover", function(){
-	// 		tooltip[i].textContent = 'Copy';
-	// 		tooltip[i].classList.remove('bounce-animation');
-	// 	});
-	// }
-
+	// Copy function and tooltip text change
 	scriptContainer.addEventListener('click', function(e){
 		if(e.target && e.target.nodeName === 'I'){
 			e.target.children[0].textContent = 'Copied';
@@ -82,15 +65,9 @@ const language = (function(){
 			range.selectNode(e.target.previousSibling);
 			window.getSelection(range);
 			document.execCommand("copy");
+			// window.getSelection().removeAllRanges();
 		}
 	});
-
-	// for(let i=0; i<copyIcon.length; i++){
-	// 	copyIcon[i].addEventListener("click", function(){
-	// 		tooltip[i].textContent = 'Copied';
-	// 		tooltip[i].classList.add('bounce-animation');
-	// 	});
-	// }
 
 	// Script Dynamic Search	
 	searchScript.addEventListener("keyup", function(){
