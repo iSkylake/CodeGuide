@@ -1,30 +1,37 @@
-const main = (function(){
+const mainScript = function(){
 	let container = document.getElementsByClassName("container")[0];
 	let searchLangInput = document.getElementById("search-language-input");
 
-	// CREATE HTML ELEMENTS TO APPEND FUNCTION
+	init = function(){
+		render();
+		keyBinding();
+	}();
 
-	for(let i=0; i<languages.length; i++){
-		let langBox = document.createElement("div");
-		let langUrl = document.createElement("a");
-		let langImg = document.createElement("img");
-		let langName = document.createElement("h1");
+	function render(){
+		for(let i=0; i<languages.length; i++){
+			let langBox = document.createElement("div");
+			let langUrl = document.createElement("a");
+			let langImg = document.createElement("img");
+			let langName = document.createElement("h1");
 
-		langBox.className = "lang-box " + languages[i].color;
+			langBox.className = "lang-box " + languages[i].color;
 
-		langUrl.setAttribute("href", languages[i].url);
-		langImg.setAttribute("src", languages[i].img);
-		langUrl.appendChild(langImg);
-		langName.appendChild(document.createTextNode(languages[i].name));
-		langBox.appendChild(langName);
-		langBox.appendChild(langUrl);
+			langUrl.setAttribute("href", languages[i].url);
+			langImg.setAttribute("src", languages[i].img);
+			langUrl.appendChild(langImg);
+			langName.appendChild(document.createTextNode(languages[i].name));
+			langBox.appendChild(langName);
+			langBox.appendChild(langUrl);
 
-		container.appendChild(langBox);
+			container.appendChild(langBox);
+		}
 	}
 
-	// DYNAMIC SEARCH FUNCTION
+	function keyBinding(){
+		searchLangInput.addEventListener("keyup", searchLanguage);
+	}
 
-	searchLangInput.addEventListener("keyup", function(){
+	function searchLanguage(){	
 		let langElements = container.children;
 		for(let i=0; i<langElements.length; i++){
 			if(langElements[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
@@ -33,6 +40,6 @@ const main = (function(){
 				langElements[i].style.display = "none";
 			}
 		}
-	});
+	}
 
-})();
+}();
