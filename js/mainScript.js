@@ -1,7 +1,10 @@
 const mainScript = function(){
+
+	// DOM cache
 	let container = document.getElementsByClassName("container")[0];
 	let searchLangInput = document.getElementById("search-language-input");
 
+	// Self-invoked init function
 	init = function(){
 		render();
 		keyBinding();
@@ -32,12 +35,12 @@ const mainScript = function(){
 	}
 
 	function searchLanguage(){	
-		let langElements = container.children;
-		for(let i=0; i<langElements.length; i++){
-			if(langElements[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
-				langElements[i].style.display = "";
+		let langBox = container.children;
+		for(let i=0; i<langBox.length; i++){
+			if(langBox[i].children[0].textContent.toLowerCase().indexOf(searchLangInput.value.toLowerCase()) > -1){
+				langBox[i].style.display = "";
 			} else {
-				langElements[i].style.display = "none";
+				langBox[i].style.display = "none";
 			}
 		}
 	}
