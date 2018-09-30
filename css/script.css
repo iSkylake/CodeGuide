@@ -4,7 +4,7 @@
 
 /* LANGUAGE SCRIPTS */
 
-.not-found{
+.not-found {
 	margin: 0 auto;
 	padding: 10px;
 	font-size: 20px;
@@ -14,12 +14,12 @@
 	display: none;
 }
 
-.script-container{
+.script-container {
 	width: 80%;
 	padding-left: 0;
 }
 
-.script-block{
+.script-block {
 	width: 100%;
 	background-color: #2b2c2d;
 	margin-bottom: 30px;
@@ -27,7 +27,7 @@
 	position: relative;
 }
 
-.scripts{
+.scripts {
 	padding: 30px;
 	display: block;
 	overflow-x: auto;
@@ -40,11 +40,11 @@
 
 /* SCRIPT NAME BACKGROUND COLOR */
 
-.script-name-html5{
+.script-name-html5 {
 	background-color: #f27618;
 }
 
-.script-name-css3{
+.script-name-css3 {
 	background-color: #1078ef;
 }
 
@@ -52,35 +52,39 @@
 	background-color: #30d333;
 }
 
-.script-name-nodejs{
+.script-name-nodejs {
 	background-color: #30d333;
 }
 
-.script-name-python{
+.script-name-python {
 	background-color: #1a55ed;
 }
 
-.script-name-mongodb{
+.script-name-mongodb {
 	background-color: #33d824;
 }
 
-.script-name-vim{
+.script-name-vim {
 	background-color: #19aa3b;
 }
 
-.script-name-terminal{
+.script-name-terminal {
 	background-color: #000000;
 }
 
-.script-name-git{
+.script-name-git {
 	background-color: #f27618;
 }
 
-.script-name-markdown{
+.script-name-npm {
+	background-color: #F44336;
+}
+
+.script-name-markdown {
 	background-color: #692be5;
 }
 
-.copy-icon{
+.copy-icon {
 	position: absolute;
 	top: 50%;
 	right: 5%;
@@ -90,18 +94,18 @@
 	transition: opacity 0.5s;
 }
 
-.copy-icon:hover{
+.copy-icon:hover {
 	color: #4dadf7;
 	opacity: 1;
 }
 
-.scripts:hover + .copy-icon{
+.scripts:hover + .copy-icon {
 	opacity: 1;
 }
 
 /* COPY TOOLTIP */
 
-.tooltip{
+.tooltip {
 	opacity: 0;
 	width: 70px;
 	background-color: rgba(0, 0, 0, 0.75);
@@ -120,7 +124,7 @@
 	transition: transform 0.5s 0.07s, opacity 0.3s 0.07s;
 }
 
-.tooltip::after{
+.tooltip::after {
 	content: " ";
 	position: absolute;
 	top: 100%; 
@@ -131,20 +135,20 @@
 	border-color: black transparent transparent transparent;
 }
 
-.copy-icon:hover .tooltip{
+.copy-icon:hover .tooltip {
 	opacity: 1;
 	transform: translate(0, 0);
 	transition: transform 0.2s 0.1s, opacity 0.5s 0.1s;
 }
 
 /* Tooltip bounce animation after click copy-icon */
-.bounce-animation{
+.bounce-animation {
 	animation-name: bouncing;
 	animation-duration: 0.75s;
 	transform-origin: bottom center;
 }
 
-@keyframes bouncing{
+@keyframes bouncing {
 	0% {transform: scale(1.2);}
 	33% {transform: scale(0.8);}
 	66% {transform: scale(1.1);}
@@ -153,8 +157,8 @@
 
 /* RESPONSIVE DESIGN FOR MOBILE */
 
-@media only screen and (max-width: 500px){
-	.script-name{
+@media only screen and (max-width: 500px) {
+	.script-name {
 		font-size: 12px;
 	}
 }

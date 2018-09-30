@@ -54,6 +54,12 @@ languages = [
 		"url": "tech.html#/git"
 	},
 	{
+		"name": "npm",
+		"color": "red",
+		"img": "img/npm-logo.png",
+		"url": "tech.html#/npm"
+	},
+	{
 		"name": "Markdown",
 		"color": "blue",
 		"img": "img/markdown-logo.png",
@@ -105,6 +111,15 @@ css = {
 	"title": "CSS3",
 	"icon": "fab fa-css3-alt",
 	"script": [
+	{
+		"name": "Remove Link Default Format",
+		"code": [
+			"<span class=\"css-tag-symbol\">a</span>{ <br>",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">text-decoration</span>: <span class=\"css-atr-value\">none</span>; <br>",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">color</span>: <span class=\"css-atr-value\">inherit</span>; <br>",
+			"}"
+		]
+	},
 	{
 		"name": "Centering Trick",
 		"code": [
@@ -170,6 +185,22 @@ css = {
 		"code": [
 			".<span class=\"css-class\">element</span>{ <br> ",
 			"&nbsp;&nbsp;<span class=\"css-atr-value\">width</span>: <span class=\"css-atr-value\">calc</span>(<span class=\"css-number\">100</span><span class=\"css-tag-symbol\">% -</span> <span class=\"css-number\">80</span><span class=\"css-tag-symbol\">px</span>); <br>",
+			"}"
+		]
+	},
+	{
+		"name": "Fixed Background Image",
+		"code": [
+			"<span class=\"css-tag-symbol\">html</span>, <span class=\"css-tag-symbol\">body</span>{ <br>",
+			"&nbsp;&nbsp;<span class=\"css-atr-value\">height</span>: <span class=\"css-number\">100</span><span class=\"css-tag-symbol\">%</span>;",
+			"} <br> <br>",
+			".element{",
+			"background: url(imgURL);",
+			"background-attachment: fixed;",
+			"background-position: center;",
+			"background-size: cover;",
+			"background-repeat: no-repeat;",
+			"height: 100%;",
 			"}"
 		]
 	}
@@ -614,9 +645,52 @@ git = {
 		{
 			"name": "Delete Untrack Files",
 			"code": ["git clean -fd"]
+		},
+		{
+			"name": "Previous Last Command Argument",
+			"code": ["!$"]
 		}
 	]
 };
+
+npm = {
+	"title": "npm",
+	"icon": "fab fa-npm",
+	"script": [
+		{
+			"name": "Start npm",
+			"code": ["npm init"]
+		},
+		{
+			"name": "Install Module Packages",
+			"code": ["npm install 'package name' --save"]
+		},
+		{
+			"name": "Install Module Package Version",
+			"code": ["npm install 'package'@'version' --save"]
+		},
+		{
+			"name": "Install Dev Dependencies",
+			"code": ["npm install 'package name' --save-dev"]
+		},
+		{
+			"name": "Install Global Packages",
+			"code": ["npm install -g 'package name'"]
+		},
+		{
+			"name": "Check Package List",
+			"code": ["npm ls"]
+		},
+		{
+			"name": "Check Outdated Packages",
+			"code": ["npm outdated"]
+		},
+		{
+			"name": "Update Packages",
+			"code": ["npm update"]
+		}
+	]
+}
 
 markdown = {
 	"title": "Markdown",

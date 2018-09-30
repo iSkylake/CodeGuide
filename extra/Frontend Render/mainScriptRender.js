@@ -12,16 +12,21 @@ const mainScript = function(){
 
 	function render(){
 		for(let i=0; i<languages.length; i++){
-			let langBoxHTML = `
-				<div class="lang-box ${languages[i].color}">
-					<h1>${languages[i].name}</h1>
-					<a href="${languages[i].url}">
-						<img src="${languages[i].img}">
-					</a>
-				</div>
-			`;
+			let langBox = document.createElement("div");
+			let langUrl = document.createElement("a");
+			let langImg = document.createElement("img");
+			let langName = document.createElement("h1");
 
-			container.insertAdjacentHTML('beforeend', langBoxHTML);
+			langBox.className = "lang-box " + languages[i].color;
+
+			langUrl.setAttribute("href", languages[i].url);
+			langImg.setAttribute("src", languages[i].img);
+			langUrl.appendChild(langImg);
+			langName.appendChild(document.createTextNode(languages[i].name));
+			langBox.appendChild(langName);
+			langBox.appendChild(langUrl);
+
+			container.appendChild(langBox);
 		}
 	}
 
